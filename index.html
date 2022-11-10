@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resolv Mockup</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Resolv</h1>
+      <nav>
+        <menu>
+          <li><a href="#">Wallet</a></li>
+          <li><a href="#">Loans</a></li>
+          <li><a href="#">Liquidity</a></li>
+          <li><a href="#">Cases</a></li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <h2>My Wallet</h2>
+      <div id="wallet-summary">
+        <div class="balance">
+          <div class="protected" style="width:55%"></div>
+          <div class="pending-withdraw" style="width:25%"></div>
+          <div class="unprotected" style="width:20%"></div>
+        </div>
+        <table class="balance">
+          <tbody>
+            <tr>
+              <td class="protected">Protected</td>
+              <td>
+                $2100
+                <span class="earn-rate">Earning 1.83% APR</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="pending-withdraw">Pending Withdraw</td>
+              <td>$500</td>
+            </tr>
+            <tr>
+              <td class="unprotected">Unprotected</td>
+              <td>$2400</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table class="wallet">
+        <thead>
+          <tr>
+            <th>Asset</th>
+            <th>Balance</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="USD_Coin_icon.webp" "USDC Logo">
+              <span class="token-name">Circle USD</span>
+            </td>
+            <td>
+              <div class="balance">
+                <div class="collateral" style="width:25%"></div>
+                <div class="protected" style="width:30%"></div>
+                <div class="pending-withdraw" style="width:25%"></div>
+                <div class="unprotected" style="width:20%"></div>
+              </div>
+              <table class="balance">
+                <tbody>
+                  <tr>
+                    <td class="protected">Protected</td>
+                    <td>
+                      1100 USDC: $1100
+                      <span class="collateral">25% Locked as Loan Collateral</span>
+                      <span class="earn-rate">Earning 1.23% APR</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pending-withdraw">Pending Withdraw</td>
+                    <td>500 USDC: $500</td>
+                  </tr>
+                  <tr>
+                    <td class="unprotected">Unprotected</td>
+                    <td>400 USDC: $400</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <button>Protect</button>
+              <button>Swap</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="ethereum.webp" "WETH Logo">
+              <span class="token-name">Wrapped ETH</span>
+            </td>
+            <td>
+              <div class="balance">
+                <div class="protected" style="width:35%"></div>
+                <div class="unprotected" style="width:65%"></div>
+              </div>
+              <table class="balance">
+                <tbody>
+                  <tr>
+                    <td class="protected">Protected</td>
+                    <td>
+                      0.7 WETH: $1100
+                      <span class="earn-rate">Earning 2.07% APR</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="unprotected">Unprotected</td>
+                    <td>1.3 WETH: $1900</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <button>Protect</button>
+              <button>Swap</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
+

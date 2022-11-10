@@ -1,0 +1,28 @@
+body { background:linear-gradient(180deg, #111, #333 100px); max-width:960px; margin:0 auto; padding:0; color:#eee; font-family:sans-serif; min-height:100vh;}
+
+header { display:flex; align-items:center; }
+header menu { list-style:none; display:flex; }
+header menu a { color:#ccc; font-size: 120%; padding: 10px 20px;}
+header menu a:hover { color:#fff; }
+
+table.wallet { width: 100%; margin:60px 0; }
+table.wallet th { border: 1px solid #ccc; }
+table.wallet>tbody>tr>td { text-align:center; border: 1px solid #666; }
+table.wallet .token-name {}
+table.wallet img { vertical-align:middle; }
+
+div.balance { width: 100%; height:12px; border: 1px solid #666; display:flex; }
+div.balance .collateral { background:#070; }
+div.balance .protected { background:#0c0; }
+div.balance .pending-withdraw { background:#cc0; }
+div.balance .unprotected { background:#c00; }
+
+table.balance { width:100%; font-size: 80%; }
+table.balance td.protected { color:#0c0; }
+table.balance td.pending-withdraw { color:#cc0; }
+table.balance td.unprotected { color:#c00; }
+table.balance .collateral { display:block; color:#070; font-weight: bold; }
+table.balance .earn-rate { display:block; color:#cc6; font-weight: bold; }
+
+
+
