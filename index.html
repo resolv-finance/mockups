@@ -11,14 +11,14 @@
       <h1>Resolv</h1>
       <nav>
         <menu>
-          <li><a href="#">Wallet</a></li>
-          <li><a href="#">Loans</a></li>
-          <li><a href="#">Liquidity</a></li>
-          <li><a href="#">Cases</a></li>
+          <li><a href="#wallet" class="nav">Wallet</a></li>
+          <li><a href="#loans" class="nav">Loans</a></li>
+          <li><a href="#liquidity" class="nav">Liquidity</a></li>
+          <li><a href="#cases" class="nav">Cases</a></li>
         </menu>
       </nav>
     </header>
-    <main>
+    <main id="wallet">
       <h2>My Wallet</h2>
       <div id="wallet-summary">
         <div class="balance">
@@ -124,9 +124,67 @@
               <button>Swap</button>
             </td>
           </tr>
+          <tr>
+            <td>
+              <img src="wrapped_bitcoin_wbtc.webp" "WETH Logo">
+              <span class="token-name">Wrapped BTC</span>
+            </td>
+            <td>
+              <div class="balance">
+                <div class="unprotected" style="width:100%"></div>
+              </div>
+              <table class="balance">
+                <tbody>
+                  <tr>
+                    <td class="unprotected">Unprotected</td>
+                    <td>
+                      1.3 WBTC: $20900
+                      <span class="earn-rate">Could be earning 1.57% APR</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <button>Protect</button>
+            </td>
+          </tr>
         </tbody>
       </table>
     </main>
+    <main id="loans" class="hidden">
+      <h2>Loans</h2>
+      <table class="wallet">
+        <thead>
+          <tr>
+            <th>Asset</th>
+            <th>Borrow Rate</th>
+            <th>Available To Borrow</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="wrapped_bitcoin_wbtc.webp" "WETH Logo">
+              <span class="token-name">Wrapped BTC</span>
+            </td>
+            <td>
+              4.23%
+            </td>
+            <td>
+              0.54 WBTC $8900
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <main id="liquidity" class="hidden">
+      <p>Hello Liquidity</p>
+    </main>
+    <main id="cases" class="hidden">
+      <p>Hello Cases</p>
+    </main>
+    <script src="index.js"></script>
   </body>
 </html>
 
